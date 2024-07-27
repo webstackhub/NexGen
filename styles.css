@@ -1,0 +1,220 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+.product-list {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+}
+.product a{
+    text-decoration: none;
+    color: black;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+/* General styles for checkout page */
+.checkout {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.checkout h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 0.75em;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Responsive design for checkout page */
+@media (max-width: 600px) {
+    .checkout {
+        padding: 1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%;
+    }
+}
+/* General styles for product page */
+.product-details {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.product-details img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+.product-details h2 {
+    margin: 0.5em 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 1em 0;
+}
+
+button {
+    padding: 0.75em;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Responsive design for product page */
+@media (max-width: 600px) {
+    .product-details {
+        padding: 1em;
+    }
+}
+/* styles.css */
+
+/* Add styles for the reviews section */
+.reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.review-form {
+    margin-bottom: 20px;
+}
+
+.review-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.review-form input, .review-form select, .review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.review-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.review-list {
+    margin-top: 20px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.review h4 {
+    margin: 0 0 5px;
+}
+
+.review p {
+    margin: 5px 0;
+}
+

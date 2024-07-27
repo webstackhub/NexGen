@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - NexGen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NexGen</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product1.html">Products</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="reviews.html">Reviews</a></li> <!-- Added Reviews link -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews">
+            <h2>Customer Reviews</h2>
+            
+            <!-- Review Submission Form -->
+            <div class="review-form">
+                <h3>Submit Your Review</h3>
+                <form action="#" method="post">
+                    <label for="product">Product Name:</label>
+                    <select id="product" name="product">
+                        <option value="nexgen-brown">NexGen Brown</option>
+                        <option value="nexgen-black">NexGen Black</option>
+                        <option value="nexgen-gray">NexGen Gray</option>
+                    </select>
+                    
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="5">5 Stars</option>
+                    </select>
+                    
+                    <label for="review-title">Review Title:</label>
+                    <input type="text" id="review-title" name="review-title" required>
+                    
+                    <label for="review-description">Review Description:</label>
+                    <textarea id="review-description" name="review-description" rows="5" required></textarea>
+                    
+                    <label for="review-photo">Upload Photos (Optional):</label>
+                    <input type="file" id="review-photo" name="review-photo" accept="image/*">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <button type="submit">Submit Review</button>
+                </form>
+            </div>
+            
+            <!-- Display Reviews -->
+            <div class="review-list">
+                <h3>Featured Reviews</h3>
+                
+                <article class="review">
+                    <h4>[Customer Name]</h4>
+                    <p>Rating: ★★★★☆</p>
+                    <p>Product: [Watch Model]</p>
+                    <p>Review Title: “Stylish and Reliable!”</p>
+                    <p>Review: “I purchased the [Watch Model] last month, and I’m incredibly satisfied with its design and performance. The accuracy is spot-on, and the strap is very comfortable. Highly recommend!”</p>
+                    <p>Date: [Date]</p>
+                    <!-- <img src="[Review Photo]" alt="Review Photo"> -->
+                </article>
+                
+                <!-- Add more reviews as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NexGen Horology</p>
+    </footer>
+</body>
+</html>
